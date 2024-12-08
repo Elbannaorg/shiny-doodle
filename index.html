@@ -24,9 +24,9 @@
             background-color: #0073e6;
             padding: 20px;
             text-align: center;
-        }
-        header img {
-            max-height: 80px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
         nav {
             background: #004080;
@@ -128,7 +128,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="logo.png" alt="Return Flights Logo">
+        ReturnFlights.net
     </header>
 
     <!-- Navigation -->
@@ -165,6 +165,7 @@
         <form action="https://example.com/submit-form" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="flight_number" placeholder="Flight Number" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
