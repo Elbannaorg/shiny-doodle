@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReturnFlights.net</title>
+    <title>ReturnFlights.net - Find Your Return Flight</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,21 +11,37 @@
             padding: 0;
             background-color: #f8f9fa;
             color: #333;
-            text-align: center;
+            line-height: 1.6;
         }
         header {
             background-color: #0073e6;
             padding: 20px;
             color: #fff;
+            text-align: center;
             font-size: 2rem;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #0073e6;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
         }
         form {
-            margin: 50px auto;
+            margin: 0 auto;
             padding: 20px;
             max-width: 400px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            text-align: left;
         }
         input, textarea, button {
             display: block;
@@ -46,24 +62,54 @@
         button:hover {
             background-color: #005bb5;
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>ReturnFlights.net</header>
-    <form id="flightForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="flight_number" placeholder="Flight Number" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
 
+    <!-- Main Content -->
+    <main>
+        <h1>Find Your Return Flight Today</h1>
+        <p>We specialize in helping you find affordable and reliable return flights. Book now to ensure a smooth journey back!</p>
+
+        <!-- Call-to-Action -->
+        <p>To book your return flight, simply fill in the form below and we’ll handle the rest.</p>
+
+        <!-- Form Section -->
+        <form id="flightForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="flight_number" placeholder="Flight Number" required>
+            <textarea name="message" rows="5" placeholder="Additional Message (optional)"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ReturnFlights.net. All Rights Reserved. | <a href="https://nowpayments.io/payment/?iid=5992969526" target="_blank">Buy Now - $29.95</a></p>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
     <script>
-        // Handle form submission
         document.getElementById('flightForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission
-            // Redirect to the success page
-            window.location.href = "success.html";
+            window.location.href = "success.html"; // Redirect to success page
         });
     </script>
 </body>
